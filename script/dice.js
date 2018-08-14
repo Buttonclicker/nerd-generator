@@ -1,10 +1,10 @@
 function roll(amount, sides) {
-	result = "";
+	result = "You rolled "+amount+"d"+sides+" and got: ";
 	var i;
 	
 	for(i = 0; i < amount; i++) {
-		result += Math.floor(Math.random()*sides+1);
+		result += (Math.floor(Math.random()*sides+1))+" ";
 	}
 		
-	console.log(result);
+	document.getElementById("OUTPUT").innerHTML = result;
 }
