@@ -6,7 +6,7 @@
 		<meta name="keywords" content="RNG, dice, random number">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title></title>
+		<title>Nerd RNG</title>
 		
 		<link rel="stylesheet" type="text/css" href="css/positioning.css">
 		<script src="script/dice.js" defer="defer"></script>
@@ -30,7 +30,18 @@
 			<!--any activity not in use is hidden, then revealed when called upon-->
 			<!--ideas for activities: character, trinket, encounter, loot, dungeon-->
 			<article id="dice">
-				
+				<form name="diceAction" novalidate>
+					<fieldset>
+						<legend>Quick Dice</legend>
+						<button type="button" onclick="roll(1,4)">1d4</button>
+						<button type="button" onclick="roll(1,6)">1d6</button>
+						<button type="button" onclick="roll(1,8)">1d8</button>
+						<button type="button" onclick="roll(1,10)">1d10</button>
+						<button type="button" onclick="roll(1,12)">1d12</button>
+						<button type="button" onclick="roll(1,20)">1d20</button>
+						<button type="button" onclick="roll(1,100)">1d100</button>
+					</fieldset>
+				</form>
 			</article>
 		</section>
 		<section id="output-area">
